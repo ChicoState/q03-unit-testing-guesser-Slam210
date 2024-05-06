@@ -133,7 +133,7 @@ TEST(GuesserTest, correct_guess_0_characters)
 TEST(GuesserTest, proper_truncate)
 {
     Guesser guesser("abcdefghijklmnopqrstuvwxyz1234567890");
-    ASSERT_TRUE(guesser.match("abcdefghijklmnopqrstuvwxyz12345"));
+    ASSERT_TRUE(guesser.match("abcdefghijklmnopqrstuvwxyz123456"));
 }
 
 TEST(GuesserTest, proper_truncate_incorrect_match)
