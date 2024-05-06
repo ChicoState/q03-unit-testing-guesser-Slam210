@@ -50,8 +50,8 @@ unsigned int Guesser::distance(string guess)
 Guesser::Guesser(string secret)
 {
     // Truncate the secret phrase if its length exceeds 32 characters
-    m_secret = secret.substr(0, 31);
-    m_remaining = 3; // Initialize remaining guesses to 3
+    m_secret = secret.substr(0, 32);
+    m_remaining = 3;
 }
 
 /*
